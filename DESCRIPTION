@@ -1,0 +1,18 @@
+Package: cassign
+Type: Package
+Title: CNV assign genes based on genomic coordinates
+Version: 0.1.0
+Date: 2016-06-21
+Authors@R: person("Aurelien", "Ginolhac", email = "first.last@example.com", role = c("aut", "cre"))
+Description: from 2 files with genomic coordinates, merge them ensuring that the
+    query fit inside the subject. Uses GenomicRanges.
+License: LGPL
+LazyData: TRUE
+Depends:
+    R (>= 3.1.2)
+Imports:
+    dplyr (>= 0.4),
+    purrr (>= 0.2),
+    GenomicRanges,
+    S4Vectors
+RoxygenNote: 5.0.1
