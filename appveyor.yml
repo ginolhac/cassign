@@ -15,7 +15,7 @@ install:
 
 environment:
   global:
-    TEST_DIR: cassign # may be worth commenting this line
+    #TEST_DIR: cassign # may be worth commenting this line
     USE_RTOOLS: true  # necessary to have gcc for compiling bioconductor packages
     R_BUILD_ARGS: --keep-empty-dirs --no-resave-data --no-manual
     R_CHECK_ARGS: --timings --no-vignettes --no-manual
