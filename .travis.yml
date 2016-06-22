@@ -8,5 +8,9 @@ r_binary_packages:
   - Rcpp
   - dplyr
   - testthat
-
 bioc_packages: GenomicRanges
+
+r_github_packages:
+  - jimhester/covr
+after_success:
+  - Rscript -e 'library(covr);codecov()'
