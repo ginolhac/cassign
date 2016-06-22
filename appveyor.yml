@@ -11,10 +11,14 @@ install:
   ps: Bootstrap
 
 # Adapt as necessary starting from here
+# see https://github.com/rdiaz02/OncoSimul/blob/master/appveyor.yml
 
 environment:
-  USE_RTOOLS: true
-  R_VERSION: stable
+  global:
+    TEST_DIR: cassign
+    USE_RTOOLS: true
+    R_BUILD_ARGS: --keep-empty-dirs --no-resave-data --no-manual
+    R_CHECK_ARGS: --timings --no-vignettes --no-manual
 
 build_script:
   - travis-tool.sh install_deps
