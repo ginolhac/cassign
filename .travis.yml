@@ -3,5 +3,10 @@
 language: R
 sudo: false
 cache: packages
-bioc_packages: GenomicRanges
 warnings_are_errors: true
+r_binary_packages:
+  - Rcpp
+  - dplyr
+  - testthat
+
+bioc_packages: GenomicRanges
