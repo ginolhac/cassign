@@ -8,11 +8,13 @@ init:
         Import-Module '..\appveyor-tool.ps1'
 
 install:
-  ps:
-    Bootstrap
-    InstallRtools
+  ps: Bootstrap
 
 # Adapt as necessary starting from here
+
+environment:
+  USE_RTOOLS: true
+  R_VERSION: stable
 
 build_script:
   - travis-tool.sh install_deps
