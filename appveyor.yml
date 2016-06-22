@@ -14,7 +14,7 @@ install:
 
 build_script:
   - travis-tool.sh install_deps
-  - travis-tool.sh install_bioc GenomicRanges S4Vectors
+  - travis-tool.sh install_bioc S4Vectors GenomicRanges
 
 test_script:
   - travis-tool.sh run_tests
