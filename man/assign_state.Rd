@@ -4,16 +4,16 @@
 \alias{assign_state}
 \title{Assign states to genes}
 \usage{
-assign_state(patient, P, ref, seg)
+assign_state(seg, column, patient, ref)
 }
 \arguments{
-\item{patient}{string of patient to keep}
+\item{seg}{data.frame of cnv}
 
-\item{P}{column name for patients}
+\item{patient}{string of patient to keep}
 
 \item{ref}{data.frame of genes}
 
-\item{seg}{data.frame of cnv}
+\item{P}{column name for patients}
 }
 \value{
 A data.frame of assigned cnvs
@@ -25,10 +25,7 @@ Assign states to genes
 \dontrun{
 library(cassign)
 
-# Import file
-e <- read.plate("od_measure.xls")
-e <- elisa.analyze(e)
-e <- elisa.analyze(e, blank = TRUE, transform = TRUE)
+res <- assign_state("A", "pat", y, x)
 }
 
 }
