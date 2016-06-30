@@ -7,10 +7,10 @@
 NULL
 
 #' Assign states to genes
-#' @param patient string of patient to keep
-#' @param P column name for patients
-#' @param ref data.frame of genes
 #' @param seg data.frame of cnv
+#' @param column column name for patients
+#' @param patient string of patient to keep
+#' @param ref data.frame of genes
 #' @return A data.frame of assigned cnvs
 #' @export
 #' @examples

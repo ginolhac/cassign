@@ -9,11 +9,11 @@ assign_state(seg, column, patient, ref)
 \arguments{
 \item{seg}{data.frame of cnv}
 
+\item{column}{column name for patients}
+
 \item{patient}{string of patient to keep}
 
 \item{ref}{data.frame of genes}
-
-\item{P}{column name for patients}
 }
 \value{
 A data.frame of assigned cnvs
